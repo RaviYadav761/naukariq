@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Cards from "./Cards";
 import aitools from "../assets/images/aitools.png";
-import codingimg from "../assets/images/Coding.png";
+import codingimg from "../assets/images/coding.png";
 import apps from "../assets/images/apps.png";
 
 import monkey from "../assets/images/monkey.png"

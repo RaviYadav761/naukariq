@@ -2,7 +2,7 @@ import playground from "../../assets/images/playground.PNG";
 import img3 from "../../assets/images/3.png";
 import img4 from "../../assets/images/4.5.PNG";
 import img5 from "../../assets/images/5.PNG";
-import img1 from "../../assets/images/1.PNG";
+import img1 from "../../assets/images/1.png";
 import historyicon from "../../assets/images/history.PNG";
 import newappicon from "../../assets/images/newapp.PNG";
 import myappsicon from "../../assets/images/myapps.PNG";
