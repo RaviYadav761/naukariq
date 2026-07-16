@@ -28,7 +28,7 @@ const CodingDay1 = () => {
                   alt="Coding"
                   className="w-56 rounded-2xl shadow-xl"
                 />
-                 <img
+                 <img-
                   src={switchd1}
                   alt="Coding"
                   className="w-56 rounded-2xl shadow-xl"
