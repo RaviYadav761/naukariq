@@ -1,5 +1,6 @@
+
 import Cards from "../../Components/Cards";
-import { Helmet } from "react-helmet-async";
+import Seo from "../../Components/Seo";
 import aistudioicon from "../../assets/images/aistudioicon.png";
 
 const AITools = () => {
@@ -9,90 +10,44 @@ const AITools = () => {
       name: "Google AI Studio",
       path: "/aistudio",
       detailsProd:
-        "Learn Google AI Studio from beginner to advanced. Explore prompts, image generation, coding, API, Gemini models, and practical AI tutorials for students and developers.",
+        "Explore Google AI Studio and learn how to use one of the most useful AI platforms for prompts, coding, and creative work.",
     },
   ];
 
   return (
     <>
-      <Helmet>
-        <title>Best AI Tools for Students and Developers | NaukariQ</title>
+      <Seo
+        title="Best AI Tools for Students and Developers"
+        description="Discover beginner-friendly AI tools and guides for students, developers, and creators, including Google AI Studio and practical AI workflows."
+        keywords="AI tools, Google AI Studio, ChatGPT, Gemini, Claude, AI websites, free AI tools"
+        canonical="https://naukriq.me/aitools"
+        ogTitle="Best AI Tools for Students and Developers"
+        ogDescription="Explore practical AI tools and beginner-friendly guides for students and developers."
+        ogImage="https://naukriq.me/og-image.svg"
+      />
 
-        <meta
-          name="description"
-          content="Discover the best AI tools including Google AI Studio, ChatGPT, Gemini, Claude, Perplexity and more. Learn AI with beginner-friendly tutorials and guides."
-        />
+      <section className="min-h-screen bg-black/30 pt-8" aria-labelledby="ai-tools-heading">
+        <div className="mx-auto max-w-7xl px-7">
+          <header className="mb-10 text-center text-white">
+            <h1 id="ai-tools-heading" className="text-4xl font-bold sm:text-5xl">
+              Best AI Tools for Students and Developers
+            </h1>
+            <p className="mx-auto mt-4 max-w-3xl text-lg text-slate-200">
+              Learn about useful AI tools that can help you build projects, study faster, and create better content.
+            </p>
+          </header>
 
-        <meta
-          name="keywords"
-          content="AI Tools, Google AI Studio, Gemini AI, ChatGPT, Claude AI, Perplexity AI, Free AI Tools, AI Tutorials, Artificial Intelligence"
-        />
-
-        <meta name="author" content="NaukariQ" />
-
-        <meta name="robots" content="index, follow" />
-
-        <link
-          rel="canonical"
-          href="https://naukriq.me/aitools"
-        />
-
-        {/* Open Graph */}
-        <meta
-          property="og:title"
-          content="Best AI Tools for Students and Developers"
-        />
-
-        <meta
-          property="og:description"
-          content="Explore the best free AI tools including Google AI Studio, ChatGPT, Gemini, Claude and more."
-        />
-
-        <meta
-          property="og:url"
-          content="https://naukriq.me/aitools"
-        />
-
-        <meta property="og:type" content="website" />
-
-        <meta
-          property="og:image"
-          content="https://naukriq.me/aistudioicon.png"
-        />
-
-        {/* Twitter */}
-        <meta
-          name="twitter:card"
-          content="summary_large_image"
-        />
-
-        <meta
-          name="twitter:title"
-          content="Best AI Tools for Students and Developers"
-        />
-
-        <meta
-          name="twitter:description"
-          content="Learn Google AI Studio, ChatGPT, Gemini, Claude and other powerful AI tools."
-        />
-
-        <meta
-          name="twitter:image"
-          content="https://naukriq.me/aistudioicon.png"
-        />
-      </Helmet>
-
-      <section className="bg-black/30 w-full min-h-screen pt-8">
-        <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-9 px-7">
-          {cardData.map((card, index) => (
-            <Cards
-              key={index}
-              srcimg={card.srcimg}
-              name={card.name}
-              detailsProd={card.detailsProd}
-              path={card.path}
-            />
-          ))}
+          <div className="flex flex-wrap justify-center gap-9">
+            {cardData.map((card, index) => (
+              <Cards
+                key={index}
+                srcimg={card.srcimg}
+                name={card.name}
+                detailsProd={card.detailsProd}
+                path={card.path}
+              />
+            ))}
+          </div>
         </div>
       </section>
     </>

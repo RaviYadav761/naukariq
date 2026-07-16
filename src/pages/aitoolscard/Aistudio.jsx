@@ -14,10 +14,23 @@ import documentationicon from "../../assets/images/documentation.PNG";
 
 
 
+import Seo from "../../Components/Seo";
+
 const Aistudio = () => {
   return (
-    <div className="bg-slate-400 min-h-screen py-10 ">
-      <div className="w-[95%] md:w-[80%] mx-auto bg-slate-200 rounded-xl shadow-lg p-8">
+    <>
+      <Seo
+        title="Google AI Studio Guide for Beginners"
+        description="Learn how to use Google AI Studio step by step with beginner-friendly guides for prompts, apps, history, API keys, and more."
+        keywords="Google AI Studio, Gemini, AI guide, AI tools, beginner guide, AI API"
+        canonical="https://naukriq.me/aistudio"
+        ogTitle="Google AI Studio Guide for Beginners"
+        ogDescription="A practical beginner guide to Google AI Studio features, apps, and API tools."
+        ogImage="https://naukriq.me/og-image.svg"
+      />
+
+      <div className="min-h-screen bg-slate-400 py-10">
+        <div className="mx-auto w-[95%] rounded-xl bg-slate-200 p-8 shadow-lg md:w-[80%]">
 
         {/* Heading */}
         <h1 className="text-4xl font-bold text-slate-800 mb-2">
@@ -59,7 +72,7 @@ const Aistudio = () => {
             <div className="flex flex-col gap-8 lg:flex-row lg:items-start">
               <img
                 src={img3}
-                alt=""
+                alt="Google AI Studio left sidebar menu"
                 className="w-full max-w-[320px] lg:w-1/6 lg:max-w-none rounded-xl border shadow-lg"
               />
               <div className="flex-1">
@@ -68,7 +81,7 @@ const Aistudio = () => {
                 </p>
                 <img
                   src={img4}
-                  alt=""
+                  alt="Google AI Studio playground feature options"
                   className="w-full max-w-[320px] lg:w-auto lg:max-w-none  rounded-xl border shadow-lg"
                 />
                 <ul className="list-disc pl-6 space-y-2">
@@ -97,7 +110,7 @@ const Aistudio = () => {
           </p>
           <img
             src={historyicon}
-            alt=""
+            alt="Google AI Studio history page with saved prompts"
             className="w-full max-w-[360px] lg:w-auto lg:max-w-none  rounded-xl border shadow-lg"
           />
 
@@ -135,7 +148,7 @@ const Aistudio = () => {
 
   <img
     src={newappicon}
-    alt=""
+    alt="Google AI Studio page for creating a new app"
     className="w-full max-w-[360px] lg:w-auto lg:max-w-nonerounded-xl border shadow-lg"
   />
 
@@ -161,7 +174,7 @@ const Aistudio = () => {
 
   <img
     src={myappsicon}
-    alt=""
+    alt="Google AI Studio My Apps dashboard"
     className="w-full max-w-[360px] lg:w-auto lg:max-w-none  rounded-xl border shadow-lg"
   />
 
@@ -187,7 +200,7 @@ const Aistudio = () => {
 
   <img
     src={galleryicon}
-    alt=""
+    alt="Google AI Studio gallery with AI examples"
     className="w-full lg:w-auto rounded-xl border shadow-lg"
   />
 
@@ -213,7 +226,7 @@ const Aistudio = () => {
 
   <img
     src={dashboardicon}
-    alt=""
+    alt="Google AI Studio dashboard overview"
     className="w-full lg:w-auto rounded-xl border shadow-lg"
   />
 
@@ -239,7 +252,7 @@ const Aistudio = () => {
 
   <img
     src={documentationicon}
-    alt=""
+    alt="Google AI Studio documentation resources"
     className="w-full lg:w-auto rounded-xl border shadow-lg"
   />
 
@@ -265,7 +278,7 @@ const Aistudio = () => {
 
   <img
     src={upgradeicon}
-    alt=""
+    alt="Google AI Studio upgrade and premium plan options"
     className="w-full lg:w-auto rounded-xl border shadow-lg"
   />
 
@@ -291,7 +304,7 @@ const Aistudio = () => {
 
   <img
     src={apikeyicon}
-    alt=""
+    alt="Google AI Studio API key generation page"
     className="w-full lg:w-auto rounded-xl border shadow-lg"
   />
 
@@ -309,9 +322,9 @@ const Aistudio = () => {
   </ul>
 </div>
 
-    </div>
-
-    </div>
+        </div>
+      </div>
+    </>
   );
 };
 

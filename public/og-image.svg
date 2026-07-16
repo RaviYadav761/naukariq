@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0f172a" />
+  <rect x="48" y="48" width="1104" height="534" rx="32" fill="#111827" stroke="#38bdf8" stroke-width="4" />
+  <circle cx="320" cy="315" r="140" fill="#38bdf8" opacity="0.22" />
+  <text x="220" y="278" fill="#ffffff" font-size="62" font-family="Arial, sans-serif" font-weight="700">NaukriQ</text>
+  <text x="220" y="348" fill="#bae6fd" font-size="34" font-family="Arial, sans-serif">Learn coding, AI tools, and digital skills</text>
+  <text x="220" y="400" fill="#94a3b8" font-size="24" font-family="Arial, sans-serif">Simple, practical learning for students and beginners</text>
+</svg>

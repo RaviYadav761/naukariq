@@ -1,53 +1,40 @@
 import Cards from "../../Components/Cards";
-import { Helmet } from "react-helmet-async";
+import Seo from "../../Components/Seo";
 import codingday1img from "../codingcard/codingimg/codingday1.png";
 
 const Movies = () => {
-
   const cardData = [
     {
       srcimg: codingday1img,
       name: "What is Coding?",
       path: "/codingday1",
       detailsProd:
-        "Learn what coding is, how computers understand 0 and 1, machine language, assembly language, and programming basics."
+        "Learn what coding is, how computers understand 0 and 1, machine language, assembly language, and programming basics.",
     },
   ];
 
   return (
     <>
-      <Helmet>
-        <title>Coding Articles | Learn Programming Step by Step | Naukriq</title>
+      <Seo
+        title="Coding Articles | Learn Programming Step by Step"
+        description="Read beginner-friendly coding tutorials on HTML, CSS, JavaScript, React, machine language, binary language, and programming basics."
+        keywords="coding articles, programming tutorials, HTML, CSS, JavaScript, React, machine language, binary language"
+        canonical="https://naukriq.me/coding-articles"
+        ogTitle="Coding Articles | Learn Programming Step by Step"
+        ogDescription="Beginner-friendly coding tutorials and programming basics for students and new developers."
+        ogImage="https://naukriq.me/og-image.svg"
+      />
 
-        <meta
-          name="description"
-          content="Read beginner-friendly coding tutorials on HTML, CSS, JavaScript, React, Machine Language, Programming Basics and more."
-        />
-
-        <meta
-          name="keywords"
-          content="Coding, Programming, HTML, CSS, JavaScript, React, Machine Language, Binary Language, Naukriq"
-        />
-
-        <link
-          rel="canonical"
-          href="https://naukriq.me/CodingArtical"
-        />
-      </Helmet>
-
-      <section className="bg-black/30 w-full min-h-screen pt-8 pb-10">
-
-        <div className="max-w-7xl mx-auto px-6">
-
-          <h1 className="text-4xl font-bold text-center mb-3">
-            Coding Articles
-          </h1>
-
-          <p className="text-center text-gray-700 max-w-3xl mx-auto mb-10">
-            Learn Coding from scratch with simple beginner-friendly tutorials.
-            Understand Programming, Machine Language, Binary Numbers,
-            HTML, CSS, JavaScript, React and much more.
-          </p>
+      <section className="min-h-screen bg-black/30 pb-10 pt-8" aria-labelledby="coding-articles-heading">
+        <div className="mx-auto max-w-7xl px-6">
+          <header className="mb-10 text-center">
+            <h1 id="coding-articles-heading" className="mb-3 text-4xl font-bold text-slate-900">
+              Coding Articles
+            </h1>
+            <p className="mx-auto max-w-3xl text-lg text-gray-700">
+              Learn coding from scratch with simple beginner-friendly tutorials. Understand programming, machine language, binary numbers, HTML, CSS, JavaScript, React, and much more.
+            </p>
+          </header>
 
           <div className="flex flex-wrap justify-center gap-9">
             {cardData.map((card, index) => (
@@ -61,16 +48,13 @@ const Movies = () => {
               />
             ))}
           </div>
-
         </div>
-
       </section>
     </>
   );
 };
 
 export default Movies;
-
 
 
 

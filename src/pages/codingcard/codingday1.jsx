@@ -1,5 +1,4 @@
-﻿import React from "react";
-import { Helmet } from "react-helmet-async";
+﻿import Seo from "../../Components/Seo";
 
 import zero1coding from "./codingimg/zero1codingd1.png";
 import switchd1 from "./codingimg/switchcodingd1.png";
@@ -9,62 +8,16 @@ import lemond1 from "./codingimg/lemoncodingd1.png";
 const CodingDay1 = () => {
   return (
     <>
-      <Helmet>
-        <title>
-          What is Coding? Coding and Machine Language | Naukriq
-        </title>
-
-        <meta
-          name="description"
-          content="Learn what Coding is, Machine Language, Binary Language, Compiler, Interpreter, C, C++, Java, Python and JavaScript with simple real-life examples."
-        />
-
-        <meta
-          name="keywords"
-          content="coding, machine language, binary language, compiler, interpreter, programming, C, C++, Java, Python, JavaScript"
-        />
-
-        <meta name="author" content="Naukriq" />
-
-        <link
-          rel="canonical"
-          href="https://naukriq.me/codingday1"
-        />
-
-        <meta
-          property="og:title"
-          content="What is Coding? Coding and Machine Language"
-        />
-
-        <meta
-          property="og:description"
-          content="Complete Beginner Guide to Coding and Machine Language."
-        />
-
-        <meta
-          property="og:url"
-          content="https://naukriq.me/codingday1"
-        />
-
-        <meta property="og:type" content="article" />
-
-        <meta
-          property="og:image"
-          content="https://naukriq.me/codingday1.png"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-
-        <meta
-          name="twitter:title"
-          content="What is Coding?"
-        />
-
-        <meta
-          name="twitter:description"
-          content="Complete Beginner Guide to Coding and Machine Language."
-        />
-      </Helmet>
+      <Seo
+        title="What is Coding? Coding and Machine Language"
+        description="Learn what coding is, machine language, binary language, compilers, interpreters, and programming basics with simple examples."
+        keywords="coding, machine language, binary language, compiler, interpreter, programming, C, C++, Java, Python, JavaScript"
+        canonical="https://naukriq.me/codingday1"
+        ogTitle="What is Coding? Coding and Machine Language"
+        ogDescription="A complete beginner guide to coding and machine language."
+        ogImage="https://naukriq.me/og-image.svg"
+        ogType="article"
+      />
 
       <div className="bg-slate-400 min-h-screen py-10">
         <div className="w-[80%] mx-auto bg-slate-200 rounded-xl shadow-lg p-8">

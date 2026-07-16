@@ -2,28 +2,25 @@ import { Link } from "react-router-dom";
 
 const Cards = ({ name, detailsProd, srcimg, path, imageClassName = "w-[190px] h-20" }) => {
   return (
-
-    <Link to={path}>
-
-      <div className="bg-white max-w-sm mx-auto rounded-2xl overflow-hidden cursor-pointer border border-blue-500">
-
+    <article className="mx-auto max-w-sm overflow-hidden rounded-2xl border border-blue-500 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+      <Link to={path} className="block">
         <img
           className={`${imageClassName} mx-auto object-contain`}
           src={srcimg}
-          alt={name}
+          alt={`${name} illustration`}
+          loading="lazy"
+          decoding="async"
         />
 
         <div className="p-5">
-          <h1 className="text-2xl font-bold border text-center border-blue-500">
+          <h2 className="border border-blue-500 bg-blue-50 px-3 py-2 text-center text-2xl font-bold text-slate-800">
             {name}
-          </h1>
+          </h2>
 
-          <p className="py-5">{detailsProd}</p>
+          <p className="py-5 text-slate-600">{detailsProd}</p>
         </div>
-
-      </div>
-
-    </Link>
+      </Link>
+    </article>
   );
 };
 

@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://naukriq.me/sitemap.xml
+Disallow: /src/
+Disallow: /node_modules/
