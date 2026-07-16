@@ -1,5 +1,6 @@
 
 import Cards from "../../Components/Cards";
+import { Helmet } from "react-helmet-async";
 import aistudioicon from "../../assets/images/aistudioicon.png"
 
 
@@ -20,7 +21,24 @@ const cardData = [
 
   return (
     <>
-  
+    <Helmet>
+    <title>Best AI Tools for Students and Developers | NaukariQ</title>
+
+    <meta
+      name="description"
+      content="Discover the best AI tools including Google AI Studio, ChatGPT, Gemini, Claude, Perplexity and more."
+    />
+
+    <meta
+      name="keywords"
+      content="AI Tools, Google AI Studio, ChatGPT, Gemini, Claude, AI websites, Free AI Tools"
+    />
+
+    <link
+      rel="canonical"
+      href="https://naukriq.me/aitools"
+    />
+  </Helmet>
 
     <section className="bg-black/30 w-full min-h-screen pt-8">
 
