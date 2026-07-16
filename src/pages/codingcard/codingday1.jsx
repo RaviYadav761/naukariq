@@ -11,7 +11,7 @@ const CodingDay1 = () => {
     <>
       <Helmet>
         <title>
-          What is Coding? Coding and Machine Language | NaukariQ
+          What is Coding? Coding and Machine Language | Naukriq
         </title>
 
         <meta
@@ -24,7 +24,7 @@ const CodingDay1 = () => {
           content="coding, machine language, binary language, compiler, interpreter, programming, C, C++, Java, Python, JavaScript"
         />
 
-        <meta name="author" content="NaukariQ" />
+        <meta name="author" content="Naukriq" />
 
         <link
           rel="canonical"

@@ -17,7 +17,7 @@ const Movies = () => {
   return (
     <>
       <Helmet>
-        <title>Coding Articles | Learn Programming Step by Step | NaukriQ</title>
+        <title>Coding Articles | Learn Programming Step by Step | Naukriq</title>
 
         <meta
           name="description"
@@ -26,7 +26,7 @@ const Movies = () => {
 
         <meta
           name="keywords"
-          content="Coding, Programming, HTML, CSS, JavaScript, React, Machine Language, Binary Language, NaukriQ"
+          content="Coding, Programming, HTML, CSS, JavaScript, React, Machine Language, Binary Language, Naukriq"
         />
 
         <link
