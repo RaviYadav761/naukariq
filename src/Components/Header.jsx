@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import naukriqLogo from "../assets/images/naukriq-logo.png";
 
 const Header = () => {
   return (
@@ -9,6 +10,7 @@ const Header = () => {
           aria-label="NaukriQ home"
           className="inline-flex items-center gap-3 rounded-2xl bg-slate-900 px-4 py-3 text-white shadow-lg shadow-slate-300/20 transition hover:bg-slate-800"
         >
+          <img src={naukriqLogo} alt="NaukriQ logo" className="h-10 w-10 rounded-full bg-white p-1" />
           <span className="text-xl font-bold">NaukriQ</span>
           <span className="rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-900">
             Q

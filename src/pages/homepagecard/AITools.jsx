@@ -3,6 +3,7 @@ import Cards from "../../Components/Cards";
 import Seo from "../../Components/Seo";
 import aistudioicon from "../../assets/images/aistudioicon.png";
 import historyicon from "../../assets/images/history.PNG";
+import historyCard from "../../assets/images/naukriq-history-card.svg";
 
 const AITools = () => {
   const cardData = [
@@ -14,7 +15,7 @@ const AITools = () => {
         "Explore Google AI Studio and learn how to use one of the most useful AI platforms for prompts, coding, and creative work.",
     },
     {
-      srcimg: historyicon,
+      srcimg: historyCard,
       name: "History of AI",
       path: "/historyofai",
       detailsProd:
