@@ -4,6 +4,7 @@ import Seo from "../../Components/Seo";
 import aistudioicon from "../../assets/images/aistudioicon.png";
 import historyicon from "../../assets/images/history.PNG";
 import historyCard from "../../assets/images/naukriq-history-card.svg";
+import Aioverviewicon from "../codingcard/codingimg/aioverview1.png";
 
 const AITools = () => {
   const cardData = [
@@ -14,6 +15,13 @@ const AITools = () => {
       detailsProd:
         "Explore Google AI Studio and learn how to use one of the most useful AI platforms for prompts, coding, and creative work.",
     },
+    {
+  srcimg: Aioverviewicon,
+  name: "Google AI Overview",
+  path: "/aioverview",
+  detailsProd:
+    "Learn how Google AI Overviews are changing search, website traffic, SEO, and the future of online publishers with verified research and insights.",
+},
     {
       srcimg: historyCard,
       name: "History of AI",
@@ -48,12 +56,13 @@ const AITools = () => {
 
           <div className="flex flex-wrap justify-center gap-9">
             {cardData.map((card, index) => (
-              <Cards
+              <Cards 
                 key={index}
                 srcimg={card.srcimg}
                 name={card.name}
                 detailsProd={card.detailsProd}
                 path={card.path}
+                
               />
             ))}
           </div>

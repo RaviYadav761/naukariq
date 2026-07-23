@@ -17,7 +17,8 @@ const Header = () => {
           </span>
         </NavLink>
 
-        <nav aria-label="Primary navigation" className="flex flex-wrap items-center justify-center gap-3 text-sm font-medium">
+        <nav aria-label="Primary navigation" className="flex flex-wrap 
+        items-center justify-center gap-3 text-sm font-medium">
           <NavLink
             to="/"
             className={({ isActive }) =>

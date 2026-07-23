@@ -11,6 +11,7 @@ import HistoryOfAI from "./pages/aitoolscard/historyofai/historyofai";
 import CodingDay1 from "./pages/codingcard/codingday1";
 import About from "./pages/navbarpage/About";
 import Contact from "./pages/navbarpage/Contact";
+import Aioverview from "./pages/codingcard/Aioverview";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
           <Route path="/coding-articles" element={<CodingArtical />} />
           <Route path="/CodingArtical" element={<CodingArtical />} />
           <Route path="/codingday1" element={<CodingDay1 />} />
+          <Route path="/aioverview" element={<Aioverview/>} />
+
           <Route path="/apps" element={<Apps />} />
           <Route path="/aistudio" element={<Aistudio />} />
           <Route path="/aitools" element={<AITools />} />
@@ -30,6 +33,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<HeroSection />} />
+
         </Routes>
       </main>
     </BrowserRouter>

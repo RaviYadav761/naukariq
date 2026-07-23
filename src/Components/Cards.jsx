@@ -5,7 +5,7 @@ const Cards = ({ name, detailsProd, srcimg, path, imageClassName = "w-[190px] h-
     <article className="mx-auto max-w-sm overflow-hidden rounded-2xl border border-blue-500 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
       <Link to={path} className="block">
         <img
-          className={`${imageClassName} mx-auto object-contain`}
+          className={`${imageClassName} mx-auto object-contain `}
           src={srcimg}
           alt={`${name} illustration`}
           loading="lazy"

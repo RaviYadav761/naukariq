@@ -4,6 +4,13 @@ import aitools from "../assets/images/aitools.png";
 import codingimg from "../assets/images/coding.png";
 
 const cardData = [
+  //    {
+  //   srcimg: aitools,
+  //   name: "AI Tools",
+  //   path: "/aitools",
+  //   detailsProd:
+  //     "Discover practical AI tools for students, developers, and creators in one easy guide.",
+  // },
   {
     srcimg: codingimg,
     name: "Coding",
@@ -18,6 +25,7 @@ const cardData = [
     detailsProd:
       "Discover practical AI tools for students, developers, and creators in one easy guide.",
   },
+
 ];
 
 const HeroSection = () => {
@@ -55,7 +63,7 @@ const HeroSection = () => {
                 name={card.name}
                 detailsProd={card.detailsProd}
                 path={card.path}
-                imageClassName="w-[240px] h-28 sm:w-[280px] sm:h-32"
+                imageClassName="w-[240px] h-28 sm:w-[280px] sm:h-32 "
               />
             ))}
           </div>
