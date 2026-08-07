@@ -12,10 +12,12 @@ import CodingDay1 from "./pages/codingcard/codingday1";
 import About from "./pages/navbarpage/About";
 import Contact from "./pages/navbarpage/Contact";
 import Aioverview from "./pages/codingcard/Aioverview";
+import AdsP1 from "./adspages/AdsP1";
+import CodingDay2 from "./pages/codingcard/codingday2";
 
 function App() {
   return (
-    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }} >
       <Header />
       <main>
         <Routes>
@@ -24,6 +26,7 @@ function App() {
           <Route path="/coding-articles" element={<CodingArtical />} />
           <Route path="/CodingArtical" element={<CodingArtical />} />
           <Route path="/codingday1" element={<CodingDay1 />} />
+          <Route path="/codingday2" element={<CodingDay2/>} />
           <Route path="/aioverview" element={<Aioverview/>} />
 
           <Route path="/apps" element={<Apps />} />
@@ -33,6 +36,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<HeroSection />} />
+
+          <Route path="/adsp1aa0xbb1ycc2zddxyz" element={<AdsP1/>} />
+
 
         </Routes>
       </main>

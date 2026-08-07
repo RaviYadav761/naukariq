@@ -1,6 +1,7 @@
 import Cards from "../../Components/Cards";
 import Seo from "../../Components/Seo";
 import codingday1img from "../codingcard/codingimg/codingday1.png";
+import codingday2img from "../codingcard/codingimg/codingday2.png";
 
 const Movies = () => {
   const cardData = [
@@ -11,6 +12,13 @@ const Movies = () => {
       detailsProd:
         "Learn what coding is, how computers understand 0 and 1, machine language, assembly language, and programming basics.",
     },
+{
+  srcimg: codingday2img,
+  name: "Frontend, Backend & Database",
+  path: "/codingday2",
+  detailsProd:
+    "Learn what Frontend, Backend, and Database are, how they work together, and understand website development with a simple restaurant example.",
+},
   ];
 
   return (
