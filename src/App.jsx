@@ -13,7 +13,7 @@ import About from "./pages/navbarpage/About";
 import Contact from "./pages/navbarpage/Contact";
 import Aioverview from "./pages/codingcard/Aioverview";
 import AdsP1 from "./adspages/AdsP1";
-import CodingDay2 from "./pages/codingcard/codingday2";
+import CodingDay2 from "./pages/codingcard/CodingDay2";
 
 function App() {
   return (

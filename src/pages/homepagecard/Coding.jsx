@@ -1,7 +1,7 @@
 import Cards from "../../Components/Cards";
 import Seo from "../../Components/Seo";
 import codingday1img from "../codingcard/codingimg/codingday1.png";
-import codingday2img from "../codingcard/codingimg/codingday2.png";
+import codingday2img from "../codingcard/codingimg/CodingDay2.png";
 
 const Movies = () => {
   const cardData = [
