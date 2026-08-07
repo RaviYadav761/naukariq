@@ -1,0 +1,37 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Coding Day 2 main illustration">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <filter id="f1" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="18" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="#0f172a"/>
+  <g transform="translate(60,60)" filter="url(#f1)">
+    <rect rx="28" width="1080" height="555" fill="url(#g1)"/>
+  </g>
+  <g transform="translate(120,140)">
+    <g>
+      <rect x="0" y="0" width="420" height="280" rx="12" fill="#0b1220" opacity="0.9"/>
+      <text x="30" y="50" fill="#ffffff" font-size="28" font-family="Inter, Arial, sans-serif">Frontend</text>
+      <text x="30" y="92" fill="#94a3b8" font-size="16" font-family="Inter, Arial, sans-serif">HTML, CSS, React</text>
+    </g>
+    <g transform="translate(480,0)">
+      <rect x="0" y="0" width="420" height="280" rx="12" fill="#071025" opacity="0.9"/>
+      <text x="30" y="50" fill="#ffffff" font-size="28" font-family="Inter, Arial, sans-serif">Backend</text>
+      <text x="30" y="92" fill="#94a3b8" font-size="16" font-family="Inter, Arial, sans-serif">Node.js, APIs, Servers</text>
+    </g>
+    <g transform="translate(240,320)">
+      <rect x="0" y="0" width="420" height="120" rx="12" fill="#071025" opacity="0.9"/>
+      <text x="30" y="48" fill="#ffffff" font-size="28" font-family="Inter, Arial, sans-serif">Database</text>
+      <text x="30" y="82" fill="#94a3b8" font-size="16" font-family="Inter, Arial, sans-serif">SQL / NoSQL</text>
+    </g>
+  </g>
+  <g transform="translate(850,50)">
+    <circle cx="80" cy="80" r="56" fill="#fff" opacity="0.08"/>
+    <path d="M60 70 L80 92 L112 48" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="90" y="560" fill="#e2e8f0" font-family="Inter, Arial, sans-serif" font-size="18">A simple visual to explain Frontend, Backend & Database</text>
+</svg>

@@ -1,5 +1,6 @@
 import React from "react";
 import Seo from "../../Components/Seo";
+import mainImg from "./codingimg/codingday2-main.svg";
 
 const CodingDay2 = () => {
 
@@ -19,6 +20,15 @@ const CodingDay2 = () => {
       <main className="bg-slate-400 min-h-screen py-10">
         <article className="w-[90%] md:w-[80%] mx-auto bg-slate-200 rounded-xl shadow-lg p-5 md:p-8">
           <header className="py-8 md:py-14">
+            <div className="mb-6 flex justify-center">
+              <img
+                src={mainImg}
+                alt="Frontend, Backend and Database illustration"
+                className="w-full max-w-4xl rounded-xl object-cover shadow-lg"
+                loading="eager"
+              />
+            </div>
+
             <span className="text-blue-600 font-semibold uppercase">
               Web Development Basics
             </span>
