@@ -40,7 +40,7 @@ const CodingArticles = () => {
               Coding Guide
             </span>
             <h1 className="mt-4 text-5xl font-extrabold tracking-tight text-white sm:text-6xl">
-              Learn Coding with a Strong, Modern UI
+              Learn Coding with a Strong, Modern style
             </h1>
             <p className="mt-6 max-w-3xl text-xl leading-8 text-slate-300">
               Start building practical programming skills with easy-to-follow coding articles, clear examples, and beautiful page design.
