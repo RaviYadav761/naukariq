@@ -1,0 +1,17 @@
+{
+  "name": "naukariq-server",
+  "version": "1.0.0",
+  "description": "NaukariQ backend server",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "he": "^1.2.0",
+    "youtube-transcript-plus": "^2.0.1"
+  }
+}

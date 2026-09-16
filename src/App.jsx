@@ -14,6 +14,7 @@ import Contact from "./pages/navbarpage/Contact";
 import Aioverview from "./pages/codingcard/Aioverview";
 import AdsP1 from "./adspages/AdsP1";
 import CodingDay2 from "./pages/codingcard/CodingDay2";
+import TranscriptYT from "./pages/TranscriptYt/TranscriptYT";
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<HeroSection />} />
 
+
+
+<Route path="/transcriptyt" element={<TranscriptYT/>} />
           <Route path="/adsp1aa0xbb1ycc2zddxyz" element={<AdsP1/>} />
 
 

@@ -23,5 +23,18 @@
     "@vitejs/plugin-react": "^6.0.3",
     "oxlint": "^1.71.0",
     "vite": "^8.1.1"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaviYadav761/naukariq.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaviYadav761/naukariq/issues"
+  },
+  "homepage": "https://github.com/RaviYadav761/naukariq#readme"
 }
