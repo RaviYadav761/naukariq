@@ -29,10 +29,10 @@ const TranscriptYT = () => {
         import.meta.env.VITE_API_URL ||
         (window.location.hostname === "localhost"
           ? "http://localhost:5000"
-          : window.location.origin);
+          : "");
 
       const response = await fetch(
-        `${apiBaseUrl}/api/transcript`,
+        `${apiBaseUrl ? `${apiBaseUrl}/api/transcript` : "/api/transcript"}`,
         {
           method: "POST",
           headers: {
@@ -44,7 +44,19 @@ const TranscriptYT = () => {
         }
       );
 
-      const data = await response.json();
+      const responseText = await response.text();
+      let data = {};
+
+      if (responseText) {
+        try {
+          data = JSON.parse(responseText);
+        } catch (parseError) {
+          console.error("Invalid JSON response from transcript API:", parseError);
+          throw new Error(
+            "The transcript API is unavailable or returned an invalid response."
+          );
+        }
+      }
 
       if (!response.ok || !data.success) {
         throw new Error(
