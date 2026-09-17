@@ -13,11 +13,22 @@ const allowedOrigins = [
   "https://www.naukriq.me",
 ];
 
+const isAllowedOrigin = (origin) => {
+  if (!origin) return true;
+
+  if (allowedOrigins.includes(origin)) return true;
+
+  if (/^https:\/\/.*\.vercel\.app$/i.test(origin)) return true;
+  if (/^https:\/\/.*\.netlify\.app$/i.test(origin)) return true;
+
+  return false;
+};
+
 // Middleware
 app.use(
   cors({
     origin: (origin, callback) => {
-      if (!origin || allowedOrigins.includes(origin)) {
+      if (isAllowedOrigin(origin)) {
         callback(null, true);
         return;
       }

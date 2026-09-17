@@ -6,36 +6,46 @@ import { fetchTranscript } from "youtube-transcript-plus";
 
 function getYouTubeVideoId(url) {
   try {
-    const parsedUrl = new URL(url);
+    const trimmedUrl = String(url).trim();
 
-    // youtube.com/watch?v=VIDEO_ID
-    if (parsedUrl.hostname.includes("youtube.com")) {
+    if (!trimmedUrl) {
+      return null;
+    }
+
+    // Accept direct video id values too
+    if (/^[A-Za-z0-9_-]{11}$/.test(trimmedUrl)) {
+      return trimmedUrl;
+    }
+
+    const parsedUrl = new URL(trimmedUrl);
+    const hostname = parsedUrl.hostname.toLowerCase();
+
+    if (
+      hostname.includes("youtube.com") ||
+      hostname.includes("youtu.be") ||
+      hostname.includes("youtube-nocookie.com") ||
+      hostname.includes("m.youtube.com")
+    ) {
       const videoId = parsedUrl.searchParams.get("v");
-
-      if (videoId) {
+      if (videoId && /^[A-Za-z0-9_-]{11}$/.test(videoId)) {
         return videoId;
       }
 
-      // youtube.com/shorts/VIDEO_ID
       if (parsedUrl.pathname.startsWith("/shorts/")) {
-        return parsedUrl.pathname
-          .split("/shorts/")[1]
-          .split("?")[0];
+        return parsedUrl.pathname.split("/shorts/")[1].split("/")[0].split("?")[0];
       }
 
-      // youtube.com/embed/VIDEO_ID
       if (parsedUrl.pathname.startsWith("/embed/")) {
-        return parsedUrl.pathname
-          .split("/embed/")[1]
-          .split("?")[0];
+        return parsedUrl.pathname.split("/embed/")[1].split("/")[0].split("?")[0];
       }
-    }
 
-    // youtu.be/VIDEO_ID
-    if (parsedUrl.hostname.includes("youtu.be")) {
-      return parsedUrl.pathname
-        .substring(1)
-        .split("?")[0];
+      if (parsedUrl.pathname.startsWith("/live/")) {
+        return parsedUrl.pathname.split("/live/")[1].split("/")[0].split("?")[0];
+      }
+
+      if (hostname.includes("youtu.be")) {
+        return parsedUrl.pathname.substring(1).split("/")[0].split("?")[0];
+      }
     }
 
     return null;

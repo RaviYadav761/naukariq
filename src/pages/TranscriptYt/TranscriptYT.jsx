@@ -17,8 +17,10 @@ const TranscriptYT = () => {
   const handleGetTranscript = async () => {
     setError("");
 
-    if (!youtubeUrl.trim()) {
-      setError("Please paste a YouTube URL.");
+    const trimmedUrl = youtubeUrl.trim();
+
+    if (!trimmedUrl) {
+      setError("Please paste a YouTube URL or video ID.");
       return;
     }
 
@@ -39,7 +41,7 @@ const TranscriptYT = () => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            url: youtubeUrl,
+            url: trimmedUrl,
           }),
         }
       );
@@ -59,29 +61,22 @@ const TranscriptYT = () => {
       }
 
       if (!response.ok || !data.success) {
-        throw new Error(
-          data.message || "Transcript could not be fetched."
-        );
+        throw new Error(data.message || "Transcript could not be fetched.");
       }
 
-      setVideoId(data.videoId);
-      setTranscript(data.transcript);
+      setVideoId(data.videoId || "");
+      setTranscript(data.transcript || "");
       setShowResult(true);
 
       setTimeout(() => {
-        document
-          .getElementById("transcript-result")
-          ?.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
+        document.getElementById("transcript-result")?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
       }, 100);
     } catch (error) {
       console.error(error);
-
-      setError(
-        error.message || "Something went wrong."
-      );
+      setError(error.message || "Something went wrong.");
     } finally {
       setLoading(false);
     }
