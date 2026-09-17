@@ -5,10 +5,28 @@ import transcriptRoutes from "./routes/transcript.routes.js";
 
 const app = express();
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
+const allowedOrigins = [
+  "http://localhost:5173",
+  "http://localhost:3000",
+  "https://naukriq.me",
+  "https://www.naukriq.me",
+];
 
 // Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: (origin, callback) => {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+        return;
+      }
+
+      callback(new Error("Not allowed by CORS"));
+    },
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 // Routes

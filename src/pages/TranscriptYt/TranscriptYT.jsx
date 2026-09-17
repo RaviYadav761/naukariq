@@ -25,8 +25,14 @@ const TranscriptYT = () => {
     setLoading(true);
 
     try {
+      const apiBaseUrl =
+        import.meta.env.VITE_API_URL ||
+        (window.location.hostname === "localhost"
+          ? "http://localhost:5000"
+          : window.location.origin);
+
       const response = await fetch(
-        "http://localhost:5000/api/transcript",
+        `${apiBaseUrl}/api/transcript`,
         {
           method: "POST",
           headers: {
